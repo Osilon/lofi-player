@@ -17,10 +17,9 @@ function App() {
     return saved ? Number(saved) : 0;
   });
   const playerRef = useRef(null);
-  const [playing, setPlaying] = useState(() => {
-    const saved = localStorage.getItem('playing');
-    return saved === 'true' ? true : false;
-  });
+
+  const [playing, setPlaying] = useState(false);
+
   const [volume, setVolume] = useState(() => {
     const saved = localStorage.getItem('volume');
     return saved ? Number(saved) : 50;
@@ -77,10 +76,7 @@ function App() {
     } else {
       playerRef.current.pauseVideo();
     }
-    setPlaying((prev) => {
-      localStorage.setItem('playing', !prev);
-      return !prev;
-    });
+    setPlaying((prev) => !prev);
   };
 
   const handleVolumeChange = (e) => {
@@ -134,7 +130,7 @@ function App() {
             marginRight: '20px',
           }}
         >
-          <img src={githubLogo} style={{height: '40px', width: '40px'}}></img>
+          <img src={githubLogo} style={{height: '40px', width: '40px'}} alt="Github Button"></img>
         </button>
 
         <button
