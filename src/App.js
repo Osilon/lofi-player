@@ -6,6 +6,7 @@ import lofi2 from './assets/lofi2.gif';
 import lofi3 from './assets/lofi3.gif';
 import lofi4 from './assets/lofi4.gif';
 import fullscreenIcon from './assets/fullscreenIcon.jpg';
+import githubLogo from './assets/githubLogo.png';
 
 const gifs = [lofi1, lofi2, lofi3, lofi4];
 const videoId = 'qH3fETPsqXU';
@@ -117,23 +118,41 @@ function App() {
         flexDirection: 'column',
       }}
     >
-      <button
-        onClick={toggleFullScreen}
-        style={{
-          background: 'none',
-          border: 'none',
-          padding: 0,
-          cursor: 'pointer',
-          height: '50px',
-          width: '50px',
-          marginLeft: 'auto',
-          marginTop: '20px',
-          marginRight: '20px',
-        }}
-        aria-label="Toggle fullscreen"
-      >
-        <img src={fullscreenIcon} style={{ height: '50px' }} alt="Fullscreen Button" />
-      </button>
+
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <button
+          onClick={() => window.open('https://github.com/Osilon')}
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: 0,
+            cursor: 'pointer',
+            height: '40px',
+            width: '40px',
+            marginLeft: 'auto',
+            marginTop: '20px',
+            marginRight: '20px',
+          }}
+        >
+          <img src={githubLogo} style={{height: '40px', width: '40px'}}></img>
+        </button>
+
+        <button
+          onClick={toggleFullScreen}
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: 0,
+            cursor: 'pointer',
+            height: '50px',
+            width: '50px',
+            marginTop: '20px',
+            marginRight: '20px',
+          }}
+        >
+          <img src={fullscreenIcon} style={{ height: '50px' }} alt="Fullscreen Button" />
+        </button>
+      </div>
 
       <h1
         style={{
@@ -142,9 +161,10 @@ function App() {
           textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
           marginTop: 'auto',
           marginLeft: '20px',
+          fontSize: '24px'
         }}
       >
-        Background {index + 1}
+        background {index + 1} &nbsp;[change using arrow keys]
       </h1>
 
       <div
