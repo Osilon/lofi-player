@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/lofi-player/static/css/main.345c3f63.css",
-    "main.js": "/lofi-player/static/js/main.52622347.js",
+    "main.js": "/lofi-player/static/js/main.8c2ee6bb.js",
     "static/media/lofi3.gif": "/lofi-player/static/media/lofi3.0ec43b3c1adbade7fbb1.gif",
     "static/media/lofi1.gif": "/lofi-player/static/media/lofi1.204a67693373ec9cf61e.gif",
     "static/media/lofi2.gif": "/lofi-player/static/media/lofi2.e9a712ebd689040b5499.gif",
     "static/media/lofi4.gif": "/lofi-player/static/media/lofi4.686235cf0fb044fc98df.gif",
     "static/media/Jersey20-Regular.ttf": "/lofi-player/static/media/Jersey20-Regular.f62fc4d7026ffdf3e65a.ttf",
+    "static/media/githubLogo.png": "/lofi-player/static/media/githubLogo.7713995a59153dd1abb6.png",
     "index.html": "/lofi-player/index.html",
     "main.345c3f63.css.map": "/lofi-player/static/css/main.345c3f63.css.map",
-    "main.52622347.js.map": "/lofi-player/static/js/main.52622347.js.map"
+    "main.8c2ee6bb.js.map": "/lofi-player/static/js/main.8c2ee6bb.js.map"
   },
   "entrypoints": [
     "static/css/main.345c3f63.css",
-    "static/js/main.52622347.js"
+    "static/js/main.8c2ee6bb.js"
   ]
 }
